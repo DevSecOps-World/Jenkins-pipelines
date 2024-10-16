@@ -6,7 +6,7 @@ pipeline{
   stages {
     stage ("Echo stage"){
 			steps{
-          helloworld(dayOfWeek:"Thursday"name:"DiwakarReddy",)
+          helloworld(dayOfWeek:"Thursday",name:"DiwakarReddy",)
       }
     }
   }
