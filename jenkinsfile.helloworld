@@ -1,14 +1,10 @@
 pipeline{
-  agent any {
-  environment {
-    Dummy = 'dummy'
-  }
-  stages {
-    stage ("Echo stage"){
-			steps{
-          helloworld(dayOfWeek:"Thursday",name:"DiwakarReddy",)
+  agent any 
+  stages{
+    stage('Hello World'){
+      steps{
+        helloworld(name:"diwakar", dayOfWeek:"Thursday")
       }
     }
-  }
   }
 }
